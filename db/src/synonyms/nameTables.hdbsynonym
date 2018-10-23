@@ -1,0 +1,8 @@
+{
+  "nameTables.Header": {
+    "target": {
+      "object": "nameTables.Header",
+      "schema": "TEST_NAMES_1"
+    }
+  }
+}
