@@ -1,0 +1,10 @@
+{
+	"XSA_DEV-gfja5vceldbk5xe5-testName-hdi_db" : {
+		"object_owner" : {
+			"container_roles" : [ "nameTablesAccessOwner#" ]
+		},
+		"application_user" : {
+			"container_roles" : [ "nameTablesAccessUser" ]
+		}
+	}
+}
