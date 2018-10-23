@@ -1,0 +1,24 @@
+using "nameTables.Header" as NAME_TABLES;
+
+context idTables {
+    type BusinessKey : String(10);
+    type HistoryT {
+        CREATEDBY : BusinessKey;
+        CREATEDAT : LocalDate;
+        CHANGEDBY : BusinessKey;
+        CHANGEDAT : LocalDate;
+    }
+
+    entity Header {
+        key ID      : BusinessKey;
+            HISTORY : HistoryT;
+    } technical configuration {
+    	column store;
+    };
+    
+    define view ID_NAME_VIEW 
+    	as select from NAME_TABLES {
+    		"NAME_TABLES"."ID" as "COMPANY_ID",
+    		"NAME_TABLES"."CO_NAME" as "COMPANY_NAME"
+    };
+};
